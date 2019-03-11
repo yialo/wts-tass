@@ -1,7 +1,10 @@
 .tass-design__image-wrapper {
   &--long {
+    position: relative;
+    z-index: 1;
     width: 771px;
     height: 3389px;
     margin-left: auto;
+    box-shadow: -4px 23px 70px 0 rgba(0, 0, 0, 0.11);
   }
 }
