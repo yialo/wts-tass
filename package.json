@@ -1,0 +1,52 @@
+{
+  "author": "WayToStart",
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "description": "TASS promo page development",
+  "devDependencies": {
+    "autoprefixer": "9.4.10",
+    "browser-sync": "2.26.3",
+    "del": "4.0.0",
+    "eslint": "5.15.1",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "gulp": "4.0.0",
+    "gulp-csso": "3.0.1",
+    "gulp-flatten": "0.4.0",
+    "gulp-imagemin": "5.0.3",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-pug": "4.0.1",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-sass-glob": "1.0.9",
+    "gulp-terser": "1.1.7",
+    "imagemin-gifsicle": "6.0.1",
+    "imagemin-jpegtran": "6.0.0",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "7.0.0",
+    "imagemin-zopfli": "6.0.0",
+    "stylelint": "9.10.1",
+    "stylelint-scss": "3.5.4"
+  },
+  "engines": {
+    "node": "10.15.0"
+  },
+  "license": "ISC",
+  "main": "gulpfile.js",
+  "name": "wts-tass",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/alekseiarrowaytostart/wts-tass.git"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "eslint": "eslint \"app/js/**/*.js\"",
+    "start": "npm run build && gulp serve",
+    "stylelint": "stylelint \"app/sass/**/*.scss\" --syntax scss",
+    "test": "npm run stylelint && npm run eslint"
+  },
+  "version": "1.0.0"
+}

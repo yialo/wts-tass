@@ -1,0 +1,6 @@
+.git/
+.vscode/
+app/vendors/
+app/vendors_customized/
+dist/
+node_modules/

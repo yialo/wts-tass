@@ -1,0 +1,4 @@
+*.js
+app/vendors/
+app/vendors_customized/
+dist/

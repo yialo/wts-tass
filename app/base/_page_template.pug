@@ -1,0 +1,14 @@
+include ../global/data/_d_site
+include ../global/data/_d_components
+include _components_import
+
+doctype html
+html(lang='ru')
+  include ../global/head/_head
+  body.page
+    header.page__header
+      include ../components/capital/_page-header/_page-header
+    main.page-main.page__main
+      block page-main
+    script(src='js/picturefill.js')
+    block current-page-scripts
