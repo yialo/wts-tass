@@ -1,0 +1,13 @@
+.tass-decoration__list {
+  @include list();
+  grid-area: 2 / 1 / 3 / 2;
+  display: grid;
+  grid: {
+    template: {
+      rows: auto 1fr;
+      columns: 354px 282px;
+    }
+    row-gap: 32px;
+  }
+  justify-content: space-between;
+}

@@ -1,0 +1,20 @@
+.tass-decoration__image-wrapper {
+  grid-area: 1 / 2 / 3 / 3;
+  position: relative;
+  z-index: 0;
+  width: 310px;
+  height: 307px;
+  padding-top: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 290px;
+    height: 290px;
+    background-color: $violet;
+    border-radius: 50%;
+  }
+}

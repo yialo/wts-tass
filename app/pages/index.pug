@@ -3,27 +3,9 @@ extends ../base/_page_template
 block page
   body.tass-page
     .tass-page__container
-      section.tass-page-header.tass-page__header
-        .tass-s_container.tass-page-header__container
-          .tass-logo.tass-page-header__logo
-            img.tass-logo__image(src='img/tass-logo__image.png', alt='ТАСС')
-          .tass-page-header__heading
-            h1.tass-page-header__title Разработка сайта для ТАСС
-            p.tass-s_description.tass-page-header__subtitle
-              | для Фестиваля культуры#[br]и искусств Северного Кавказа
-      section.tass-customer.tass-page__customer
-        .tass-s_container.tass-customer__container
-          img.tass-customer__pattern(
-            src='img/tass-customer__pattern.svg',
-            width='919',
-            height='901',
-            role='presentation',
-            alt='Узор',
-          )
-          picture.tass-customer__image-wrapper
-            img.tass-customer__image(
-              src='img/tass-customer__image.png',
-              alt='Девушка',
-            )
-          p.tass-s_description.tass-customer__description Рамзан Ахматович Кадыров принимал наши проекты :)
+      include ../components/capital/_page-header/_page-header
+      include ../components/capital/_customer/_customer
+      include ../components/capital/_conditions/_conditions
+      include ../components/capital/_design/_design
+      include ../components/capital/_decoration/_decoration
     script(src='js/picturefill.js')

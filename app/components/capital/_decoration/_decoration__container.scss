@@ -1,0 +1,15 @@
+.tass-decoration__container {
+  display: grid;
+  grid: {
+    template: {
+      rows: auto 1fr;
+      columns: 712px auto;
+    }
+    row-gap: 64px;
+  }
+  justify-content: space-between;
+  padding: {
+    left: 64px;
+    right: 112px;
+  }
+}
