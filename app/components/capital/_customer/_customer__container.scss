@@ -1,0 +1,9 @@
+.tass-customer__container {
+  @include padding-hor(190px);
+  position: relative;
+  display: flex;
+  padding: {
+    top: 176px;
+    bottom: 400px;
+  }
+}

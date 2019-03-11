@@ -1,14 +1,22 @@
 extends ../base/_page_template
 
 block page
-  body.page
-    div.page__container
-      header.page-header.page__header
-        .s_container.page-header__container
-          .logo.page-header__logo
-            img.logo__image(src='img/logo__image.png' alt='ТАСС')
-          .page-header__heading
-            h1.page-header__title Разработка сайта для ТАСС
-            p.page-header__subtitle
+  body.tass-page
+    .tass-page__container
+      section.tass-page-header.tass-page__header
+        .tass-s_container.tass-page-header__container
+          .tass-logo.tass-page-header__logo
+            img.tass-logo__image(src='img/tass-logo__image.png', alt='ТАСС')
+          .tass-page-header__heading
+            h1.tass-page-header__title Разработка сайта для ТАСС
+            p.tass-s_description.tass-page-header__subtitle
               | для Фестиваля культуры#[br]и искусств Северного Кавказа
+      section.tass-customer.page__customer
+        .tass-s_container.tass-customer__container
+          picture.tass-customer__image-wrapper
+            img.tass-customer__image(
+              src='img/tass-customer__image.png',
+              alt='Девушка',
+            )
+          p.tass-s_description.tass-customer__description Рамзан Ахматович Кадыров принимал наши проекты :)
     script(src='js/picturefill.js')

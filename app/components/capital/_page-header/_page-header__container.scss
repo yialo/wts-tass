@@ -1,9 +1,8 @@
-.page-header__container {
+.tass-page-header__container {
+  @include padding-hor(224px);
   display: flex;
   padding: {
     top: 304px;
     bottom: 640px;
-    left: 224px;
-    right: 224px;
   }
 }
