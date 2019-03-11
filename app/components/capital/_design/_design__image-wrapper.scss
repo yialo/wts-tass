@@ -7,4 +7,13 @@
     margin-left: auto;
     box-shadow: -4px 23px 70px 0 rgba(0, 0, 0, 0.11);
   }
+
+  &--flow-1 {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 0;
+    width: 1046px;
+    height: 1313px;
+  }
 }

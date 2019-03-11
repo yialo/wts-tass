@@ -1,3 +1,18 @@
 .tass-design__description {
-  width: 780px;
+  &--top {
+    width: 780px;
+  }
+
+  &--middle {
+    width: 500px;
+    font-size: 36px;
+    line-height: 48px;
+    color: $violet;
+  }
+
+  &--bottom {
+    width: 500px;
+    font-size: 27px;
+    line-height: 38px;
+  }
 }
