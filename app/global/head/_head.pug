@@ -1,0 +1,18 @@
+head
+  include _d_general_meta
+  include _d_fonts
+  meta(charset='utf-8')
+  title #{SITE_TITLE}
+  each item in GENERAL_META_DATA
+    - const [name, content] = item;
+    meta(name=name, content=content)
+  each value, key in FONT_SETS
+    each weightValue in value.weightNames
+      each styleValue in value.styleNames
+        link(
+          rel='preload',
+          href=`fonts/${key}-${weightValue}-${styleValue}.woff2`,
+          as='font',
+          crossorigin='anonymous',
+        )
+  link(rel='stylesheet', href='css/main.min.css')

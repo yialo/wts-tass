@@ -1,0 +1,7 @@
+@mixin margin-bottom-last($margin-bottom, $margin-bottom-last: 0) {
+  margin-bottom: $margin-bottom;
+
+  &--last {
+    margin-bottom: $margin-bottom-last;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin font(
+  $fontWeight: 400,
+  $fontSize: 16px,
+  $fontFamily: geometria,
+) {
+  font: {
+    weight: $fontWeight;
+    size: $fontSize;
+    family: "#{$fontFamily}", "Arial", sans-serif;
+  }
+}

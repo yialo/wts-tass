@@ -1,29 +1,5 @@
 extends ../base/_page_template
 
-block page-variable
-  - const page = PAGE_INDEX;
-
-block page-main
-  -
-    const pageMain_getElClasses =
-      function getPageMainElementModifierClass(modifier) {
-        const pageMainElementBasicClass = 'page-main__longpage-inner';
-        const pageMainElementClasses = [
-          pageMainElementBasicClass,
-          `${pageMainElementBasicClass}--${modifier}`,
-        ];
-        return pageMainElementClasses;
-      };
-
-  include ../components/capital/_intro/_intro
-  include ../components/capital/_about-brief/_about-brief
-  include ../components/capital/_indices/_indices
-  include ../components/capital/_logistics-brief/_logistics-brief
-  include ../components/capital/_transport/_transport
-  include ../components/capital/_additional-service/_additional-service
-  include ../components/capital/_clients/_clients
-  +customs('agent')(class=pageMain_getElClasses('customs-agent'))
-  +customs('service')(class=pageMain_getElClasses('customs-service'))
-
-block current-page-scripts
-  script(src='js/heading-jumps.js')
+block page
+  body.page
+    script(src='js/picturefill.js')
