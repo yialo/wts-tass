@@ -1,3 +1,16 @@
-section.tass-design.tass-page__design
+.tass-design.tass-page__design
   .tass-s_container.tass-design__container
-    p.tass-s_description.tass-design__description Дизайн проекта отрисовывался в стиле ЛайнАрт (от руки), что позволило подчеркнуть индивидуальность#[br]ландшафта и самого события.
+    .tass-design__row
+      p.tass-s_description(class=[
+        'tass-design__description',
+        'tass-design__description--top',
+      ]) Дизайн проекта отрисовывался в стиле ЛайнАрт (от руки), что позволило подчеркнуть индивидуальность#[br]ландшафта и самого события.
+    picture(class=[
+      'tass-design__image-wrapper',
+      'tass-design__image-wrapper--long',
+    ])
+      img.tass-design__image(
+        src='img/tass-design__image-long.jpg',
+        alt='Примеры страниц',
+      )
+    .tass-design__content

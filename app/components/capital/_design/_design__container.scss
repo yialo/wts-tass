@@ -1,6 +1,9 @@
 .tass-design__container {
+  display: flex;
+  flex-wrap: wrap;
   padding: {
     top: 16px;
+    bottom: 140px;
     left: 64px;
   }
 }
