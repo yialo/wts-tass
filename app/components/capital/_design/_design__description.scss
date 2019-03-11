@@ -12,6 +12,10 @@
 
   &--bottom {
     width: 500px;
+    margin: {
+      top: auto;
+      bottom: 50px;
+    }
     font-size: 27px;
     line-height: 38px;
   }

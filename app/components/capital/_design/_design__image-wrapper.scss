@@ -16,4 +16,23 @@
     width: 1046px;
     height: 1313px;
   }
+
+  &--flow-2 {
+    position: absolute;
+    top: 2260px;
+    left: 64px;
+    z-index: -1;
+    width: 794px;
+    height: 558px;
+  }
+
+  &--flow-3 {
+    width: 415px;
+    height: 476px;
+    margin: {
+      bottom: 0;
+      left: auto;
+      right: 60px;
+    }
+  }
 }
