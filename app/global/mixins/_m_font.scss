@@ -1,7 +1,7 @@
 @mixin font(
   $fontWeight: 400,
-  $fontSize: 16px,
-  $fontFamily: geometria,
+  $fontSize: 32px,
+  $fontFamily: a_bosanovacps,
 ) {
   font: {
     weight: $fontWeight;
