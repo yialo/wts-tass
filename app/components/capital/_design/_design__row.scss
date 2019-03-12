@@ -1,6 +1,12 @@
 .tass-design__row {
-  width: 100%;
-  margin-bottom: 96px;
-  font-size: 27px;
-  line-height: 38px;
+  &--bottom {
+    flex: {
+      grow: 1;
+      shrink: 0;
+      basis: 50px;
+    }
+    display: flex;
+    flex-direction: column;
+    padding-top: 1100px;
+  }
 }
