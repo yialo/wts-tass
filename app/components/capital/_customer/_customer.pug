@@ -1,8 +1,7 @@
 .tass-customer.tass-page__customer
   .tass-s_container.tass-customer__container
-    picture.tass-customer__image-wrapper
-      img.tass-customer__image(
-        src='img/tass-customer__image.png',
-        alt='Девушка',
-      )
+    +tass-s_picture().tass-customer__image-wrapper(
+      src='img/tass-customer__image.png',
+      alt='Девушка',
+    )
     p.tass-s_description.tass-customer__description Рамзан Ахматович Кадыров принимал наши проекты :)
