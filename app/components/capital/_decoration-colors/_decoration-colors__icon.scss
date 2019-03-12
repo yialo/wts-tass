@@ -1,0 +1,23 @@
+.tass-decoration-colors__icon {
+  $decoration-colors-icons: (
+    ("violet", $violet),
+    ("dark-gray", $dark-gray),
+    ("ultra-gray", #efefef),
+  );
+
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  border: {
+    width: 1px;
+    style: solid;
+    radius: 50%;
+  }
+
+  @each $modifier, $color in $decoration-colors-icons {
+    &--#{$modifier} {
+      background-color: $color;
+      border-color: if($modifier == "ultra-gray", #888888, $color);
+    }
+  }
+}

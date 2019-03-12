@@ -1,0 +1,4 @@
+.tass-s_container {
+  @include margin-hor();
+  width: $l-max-width;
+}

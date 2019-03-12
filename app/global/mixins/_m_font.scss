@@ -1,0 +1,12 @@
+@mixin font(
+  $fontWeight: 400,
+  $fontSize: 32px,
+  $fontFamily: a_bosanovacps,
+) {
+  font: {
+    weight: $fontWeight;
+    size: $fontSize;
+    family: "#{$fontFamily}", "Arial", sans-serif;
+  }
+  letter-spacing: 0.75px;
+}

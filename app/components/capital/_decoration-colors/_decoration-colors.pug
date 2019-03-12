@@ -1,0 +1,26 @@
+ul.tass-decoration-colors
+  -
+    const DECORATION_COLORS = [
+      ['violet', '8980c3', 'Фиолетовый'],
+      ['dark-gray', '292929', 'Тёмно-серый'],
+      ['ultra-gray', 'efefef', 'Белый'],
+    ];
+  each item, index in DECORATION_COLORS
+    - const [modifier, color, name] = item;
+    li(class=[
+      'tass-decoration-colors__item',
+      (
+        index === DECORATION_COLORS.length - 1
+        ? 'tass-decoration-colors__item--last'
+        : null
+      ),
+    ])
+      span(
+        class=[
+          'tass-decoration-colors__icon',
+          `tass-decoration-colors__icon--${modifier}`,
+        ],
+        role='img',
+        aria-label=name,
+      )
+      span.tass-decoration-colors__name ##{color}

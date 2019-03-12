@@ -1,0 +1,32 @@
+$font-properties: (
+  a_bosanovacps: (
+    font-styles: normal,
+    font-weights: (400 regular,),
+  ),
+  helveticaneuecyr: (
+    font-styles: normal,
+    font-weights: (300 light, 400 regular,),
+  ),
+);
+
+
+@each $font-family, $font-family-properties in $font-properties {
+  @each $font-weight in map-get($font-family-properties, font-weights) {
+    @each $font-style in map-get($font-family-properties, font-styles) {
+      @font-face {
+        $font-weight-value: nth($font-weight, 1);
+        $font-weight-title: nth($font-weight, 2);
+        $font-file-name: #{$font-family}-#{$font-weight-title}-#{$font-style};
+
+        font-style: $font-style;
+        font-weight: $font-weight-value;
+        font-family: #{$font-family};
+        font-display: swap;
+
+        src:
+          url("../fonts/#{$font-file-name}.woff2") format("woff2"),
+          url("../fonts/#{$font-file-name}.woff") format("woff");
+      }
+    }
+  }
+}

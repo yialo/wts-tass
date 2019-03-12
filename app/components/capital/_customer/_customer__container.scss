@@ -1,0 +1,15 @@
+.tass-customer__container {
+  position: relative;
+  display: flex;
+  padding: {
+    top: 416px;
+    bottom: 400px;
+    right: 190px;
+  }
+  background: {
+    image: url("../img/tass-pattern-1.svg");
+    position-x: -230px;
+    size: 919px 901px;
+    repeat: no-repeat;
+  }
+}

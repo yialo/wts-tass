@@ -1,0 +1,30 @@
+.tass-design__description {
+  padding-left: var(--tass-design-left-shift);
+
+  &--top {
+    grid-area: 1 / 1 / 2 / -1;
+    width: 810px;
+    margin-bottom: 96px;
+    font-size: 27px;
+    line-height: 38px;
+  }
+
+  &--middle {
+    transform: translateY(-200px);
+    width: 530px;
+    font-size: 36px;
+    line-height: 48px;
+    color: $violet;
+  }
+
+  &--bottom {
+    grid-area: -3 / 1 / -2 / 2;
+    width: 550px;
+    margin: {
+      top: 120px;
+      bottom: 50px;
+    }
+    font-size: 27px;
+    line-height: 38px;
+  }
+}

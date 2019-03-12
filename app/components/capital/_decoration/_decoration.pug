@@ -1,0 +1,42 @@
+.tass-decoration.tass-page__decoration
+  -
+    const DECORATION_ITEMS = [
+      ['colors', 'Цвет', ''],
+      ['headings', 'Заголовки', 'BosaNova'],
+      ['content', 'Контент', 'Helvetica'],
+    ];
+  .tass-s_container.tass-decoration__container
+    h2.tass-decoration__heading Шрифты и оформление
+    ul.tass-decoration__list
+      each item in DECORATION_ITEMS
+        - const [modifier, caption, text] = item;
+        li(class=[
+          'tass-decoration__item',
+          `tass-decoration__item--${modifier}`,
+        ])
+          dl(class=[
+            'tass-decoration__terms',
+            (
+              modifier === 'colors'
+              ? 'tass-decoration__terms--narrow'
+              : 'tass-decoration__terms--wide'
+            ),
+          ])
+            dt.tass-decoration__term #{caption}:
+            dd.tass-decoration__details
+              if modifier === 'colors'
+                include ../_decoration-colors/_decoration-colors
+              else
+                span(class=[
+                  'tass-decoration__string',
+                  (
+                    modifier === 'content'
+                    ? 'tass-decoration__string--special-font'
+                    : null
+                  ),
+                ])= text
+    .tass-decoration__image-wrapper
+      img.tass-decoration__image(
+        src='img/tass-decoration__image.png',
+        alt='Книги',
+      )

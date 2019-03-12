@@ -1,0 +1,8 @@
+.tass-intro__container {
+  @include padding-hor(224px);
+  display: flex;
+  padding: {
+    top: 304px;
+    bottom: 640px;
+  }
+}

@@ -1,0 +1,49 @@
+.tass-design.tass-page__design
+  -
+    const DESIGN_PATTERNS = [[450, 442], [500, 507]];
+    const DESIGN_IMAGES = [
+      ['flow-1', 'png', 'Наброски'],
+      ['flow-2', 'png', 'Пример блока сайта'],
+      ['flow-3', 'png', 'Музыкальные инструменты'],
+      ['long', 'jpg', 'Примеры страниц'],
+    ];
+  mixin tass-design__image-wrapper(params)
+    - const [modifier, ext, alt] = params;
+    +tass-s_picture()(
+      class=[
+        'tass-design__image-wrapper',
+        `tass-design__image-wrapper--${modifier}`,
+      ],
+      src=`img/tass-design__image--${modifier}.${ext}`,
+      alt=alt,
+    )
+  .tass-s_container.tass-design__container
+    p.tass-s_description(class=[
+      'tass-design__description',
+      'tass-design__description--top',
+    ]) Дизайн проекта отрисовывался в стиле ЛайнАрт (от руки), что позволило подчеркнуть индивидуальность#[br]ландшафта и самого события.
+    .tass-design__illustration
+      +tass-design__image-wrapper(DESIGN_IMAGES[0])
+      p.tass-s_description(class=[
+        'tass-design__description',
+        'tass-design__description--middle',
+      ]) Создание уникальных иллюстраций посвященных культурному наследию
+      each pattern, index in DESIGN_PATTERNS
+        -
+          const number = index + 1;
+          const [width, height] = pattern;
+        img(
+          class=['tass-design__pattern', `tass-design__pattern--${number}`],
+          src=`img/tass-pattern-${number}.svg`,
+          alt='Узор',
+          width=width,
+          height=height,
+          role='presentation',
+        )
+    +tass-design__image-wrapper(DESIGN_IMAGES[1])
+    p.tass-s_description(class=[
+      'tass-design__description',
+      'tass-design__description--bottom',
+    ]) Сайт очень понравился организаторам мероприятия и руководству#[br]Чеченской республики.
+    +tass-design__image-wrapper(DESIGN_IMAGES[2])
+    +tass-design__image-wrapper(DESIGN_IMAGES[3])

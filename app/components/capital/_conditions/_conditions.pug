@@ -1,0 +1,14 @@
+.tass-conditions.tass-page__conditions
+  - CONDITIONS_ALTS = ['Саша Ирбе', 'Условия фестиваля'];
+  .tass-s_container.tass-conditions__container
+    each altText, index in CONDITIONS_ALTS
+      - const number = index + 1;
+      +tass-s_picture()(
+        class=[
+          'tass-conditions__image-wrapper',
+          `tass-conditions__image-wrapper--${number}`,
+        ],
+        src=`img/tass-conditions__image-${number}.png`,
+        alt=altText,
+      )
+    p.tass-s_description.tass-conditions__description Разработка промо сайта по заказу ТАСС для Фестиваля культуры и искусств «Северный Кавказ»

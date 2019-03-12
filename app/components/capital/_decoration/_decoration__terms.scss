@@ -1,0 +1,17 @@
+.tass-decoration__terms {
+  display: grid;
+  grid-template-rows: auto;
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font-size: 24px;
+
+  &--narrow {
+    grid-template-columns: 110px 1fr;
+  }
+
+  &--wide {
+    grid-template-columns: 160px 1fr;
+  }
+}

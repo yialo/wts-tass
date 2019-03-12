@@ -1,0 +1,22 @@
+.tass-design__pattern {
+  position: absolute;
+  z-index: 1;
+
+  &--1 {
+    top: 1440px;
+    left: 0;
+    width: 357px;
+    height: 442px;
+    object: {
+      fit: cover;
+      position: right;
+    }
+  }
+
+  &--2 {
+    top: 1070px;
+    left: 297px;
+    width: 500px;
+    height: 507px;
+  }
+}

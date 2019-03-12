@@ -1,0 +1,5 @@
+.tass-decoration-colors__item {
+  @include margin-bottom-last(16px);
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+@mixin outline($color: green) {
+  outline: {
+    width: 1px;
+    style: solid;
+    color: $color;
+    offset: -1px;
+  }
+}
