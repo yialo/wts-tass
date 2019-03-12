@@ -1,11 +1,13 @@
 .tass-design__illustration {
   grid-area: 2 / 1 / 3 / -1;
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   background: {
-    image: url("../img/tass-pattern-1.svg"), url("../img/tass-pattern-2.svg");
-    position: -93px 1660px, 297px 1280px;
-    size: 450px 442px, 500px 507px;
-    repeat: no-repeat, no-repeat;
+    image: url("../img/tass-pattern-1.svg");
+    position: -93px 1440px;
+    size: 450px 442px;
+    repeat: no-repeat;
   }
 }
